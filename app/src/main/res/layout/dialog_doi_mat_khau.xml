@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlmatkhauDoimatkhau"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtMatkhauDoimatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đổi mật khẩu:"
+            android:textSize="18sp"
+            android:textColor="@color/colortextmain"
+            android:fontFamily="serif"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtMatkhauDoimatkhau"
+            android:layout_below="@+id/txtMatkhauDoimatkhau"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:background="@drawable/custom_style_edt"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            />
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxXemMKDoiMK"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_alignBottom="@id/edtMatkhauDoimatkhau"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:button="@drawable/custom_check_box_see"/>
+
+        <EditText
+            android:background="@drawable/custom_style_edt"
+            android:id="@+id/edtMatkhauMoiDoiMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtMatkhauDoimatkhau"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập mật khẩu mới"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxXemMKMDoiMK"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_alignBottom="@id/edtMatkhauMoiDoiMatKhau"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:button="@drawable/custom_check_box_see"/>
+
+        <EditText
+            android:background="@drawable/custom_style_edt"
+            android:id="@+id/edtNhapLaiMatkhauMoiDoiMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtMatkhauMoiDoiMatKhau"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập lại mật khẩu mới"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxNhapMKLaiDoiMatKhau"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:scaleType="center"
+            android:clickable="false"
+            android:layout_alignBottom="@id/edtNhapLaiMatkhauMoiDoiMatKhau"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:button="@drawable/ciustom_check_box_mk"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlmatkhauDoimatkhau"
+        android:weightSum="2"
+        android:layout_margin="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHuyDoiMatKhau"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_style_btn_not"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOKDoiMatKhau"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_style_btn"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

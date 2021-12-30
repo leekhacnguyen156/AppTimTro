@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+    tools:context=".Activity.vChiTietTinDuyet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tlbChiTietTinDuyet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtGiaPhongChiTietTinDuyet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Giá phòng/tháng"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/colortextmain"
+                        android:layout_centerInParent="true" />
+
+                    <ImageButton
+                        android:id="@+id/btnBackChiTietTinDuyet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_back"
+                        android:scaleType="center"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerimgChiTietTinDuyet"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_below="@+id/tlbChiTietTinDuyet"
+                android:layout_marginTop="2dp"
+                android:background="@color/textblack" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicatorCTTinDuyet"
+                android:layout_alignBottom="@id/viewPagerimgChiTietTinDuyet"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTieudeChiTietTinDuyet"
+                android:text=""
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:textColor="@color/colortextmain"
+                android:textStyle="bold"
+                android:gravity="center|start"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:singleLine="false"
+                android:layout_below="@+id/viewPagerimgChiTietTinDuyet"
+                android:layout_marginTop="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/reltaiKhoanTinDuyet"
+                android:layout_below="@id/txtTieudeChiTietTinDuyet"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvtTaikhoanTinDuyet"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_people"/>
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/imgAvtTaikhoanTinDuyet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtTenTaiKhoanTinDuyet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="nguyengiakhang"
+                        android:textSize="18sp"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colortextmain"
+                        android:gravity="center|start"
+                        android:singleLine="false" />
+
+                    <TextView
+                        android:id="@+id/txtDiaChiTaiKhoanTinDuyet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_below="@+id/txtTenTaiKhoanTinDuyet"
+                        android:textSize="14sp"
+                        android:fontFamily="serif"
+                        android:textColor="@color/textblack"
+                        android:gravity="center|start"
+                        android:singleLine="false" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rltChiTietTinDuyet"
+                android:layout_below="@+id/reltaiKhoanTinDuyet"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDiaChiChiTietTinDuyet"
+                    android:text=": "
+                    android:textSize="14sp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:singleLine="false"
+                    android:drawableStart="@drawable/ic_vitri"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLienHeChiTietTinDuyet"
+                    android:layout_below="@+id/txtDiaChiChiTietTinDuyet"
+                    android:text=": "
+                    android:textSize="14sp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:gravity="bottom" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtDienTichPhongChiTietTinDuyet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLienHeChiTietTinDuyet"
+                    android:drawableStart="@drawable/ic_dientich"
+                    android:drawablePadding="10dp"
+                    android:text=": "
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtDanhGiaChiTietTinDuyet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDienTichPhongChiTietTinDuyet"
+                    android:drawableStart="@drawable/ic_ngoisao"
+                    android:drawablePadding="10dp"
+                    android:text=": 0/5"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/titleTienIchChiTietTinDuyet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rltChiTietTinDuyet"
+                android:text="Tiện ích phòng: "
+                android:textColor="@color/colortextmain"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp" />
+
+            <com.example.timtro.xml.ExpandableHeightGridView
+                android:id="@+id/gridTienIchPhongChiTietTinDuyet"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:isScrollContainer="false"
+                android:layout_below="@id/titleTienIchChiTietTinDuyet"
+                android:layout_alignParentEnd="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:numColumns="4" />
+
+            <TextView
+                android:id="@+id/titleMoTaChiTietTinDuyet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gridTienIchPhongChiTietTinDuyet"
+                android:text="Mô tả chi tiết: "
+                android:textColor="@color/colortextmain"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/txtMoTaChiTietTinDuyet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleMoTaChiTietTinDuyet"
+                android:textColor="@color/textblack"
+                android:textSize="14sp"
+                android:singleLine="false"
+                android:gravity="start|center"
+                android:fontFamily="serif"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTuyChonCTTCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/colortextmain"
+        app:rippleColor="@color/colortextmain"
+        android:layout_margin="30dp"
+        app:srcCompat="@drawable/ic_baseline_menu_open_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

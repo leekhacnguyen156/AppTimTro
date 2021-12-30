@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayline">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnXemPhongDaDang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Xem"
+        android:textColor="@color/colortextmain"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_view"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        android:fontFamily="serif"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="1dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSuaPhongDaDang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Sửa"
+        android:textColor="@color/colortextmain"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        android:fontFamily="serif"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="1dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnXoaPhongDaDang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Xóa"
+        android:textColor="@color/colortextmain"
+        android:textAlignment="textStart"
+        android:drawableStart="@drawable/ic_delete"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        android:fontFamily="serif"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="1dp"
+        />
+
+</LinearLayout>

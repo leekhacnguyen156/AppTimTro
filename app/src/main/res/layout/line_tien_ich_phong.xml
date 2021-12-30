@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relTienIchPhong"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:scaleType="center"
+            android:id="@+id/imgTienIchPhong"
+            android:src="@mipmap/bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtTenTienIchPhong"
+            android:textColor="@color/textblack"
+            android:gravity="center"
+            android:layout_below="@id/imgTienIchPhong"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:text="Wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

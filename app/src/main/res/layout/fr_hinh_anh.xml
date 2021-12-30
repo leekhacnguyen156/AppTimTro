@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:isScrollContainer="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relChonAnh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtChonAnh"
+                    android:textColor="@color/colortextmain"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="Chọn ảnh"
+                    android:drawableStart="@drawable/ic_add_photo_alternate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/txtSoAnh"
+                    android:textColor="@color/textred"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="0/4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <com.example.timtro.xml.ExpandableHeightGridView
+                android:id="@+id/gridHinhAnh"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/relChonAnh"
+                android:numColumns="2"
+                android:background="@drawable/custom_style_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

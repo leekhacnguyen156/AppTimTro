@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/relTinTrangChu"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewDuyetTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgTinTrangChu"
+                android:scaleType="fitXY"
+                android:layout_width="200dp"
+                android:layout_height="160dp"/>
+
+            <TextView
+                android:id="@+id/txtGiaTinTrangChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colortextmain"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_alignStart="@+id/imgTinTrangChu"
+                android:layout_alignTop="@+id/imgTinTrangChu"
+                android:padding="5dp"
+                android:text="3 triệu"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_below="@+id/imgTinTrangChu"
+                android:id="@+id/txtDiaChiTinTrangChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Trà Vinh"
+                android:textSize="14sp"
+                android:drawablePadding="10dp"
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:drawableStart="@drawable/ic_vitri" />
+
+            <TextView
+                android:id="@+id/txtDienTichTinTrangChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDiaChiTinTrangChu"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_dientich"
+                android:fontFamily="serif"
+                android:text=": 50m2"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtThoiGianTinTrangChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDienTichTinTrangChu"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:fontFamily="serif"
+                android:text=": 1h"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

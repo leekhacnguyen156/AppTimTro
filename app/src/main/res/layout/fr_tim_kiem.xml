@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/edtTimKiem"
+        android:inputType="textNoSuggestions"
+        android:fontFamily="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colortextmain"
+        android:background="@drawable/custom_style_edt"
+        app:queryHint="Tìm kiếm (Nhập tiêu đề hoặc nơi ở..)"
+        app:iconifiedByDefault="false"
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:padding="5dp"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_below="@+id/edtTimKiem"
+        android:id="@+id/frlayoutTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

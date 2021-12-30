@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.vDangTin">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbDangTin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btnHuyTin"
+            android:text="Hủy"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:textColor="#F00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/titleDangTin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng tin"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="18sp"
+            android:textColor="@color/colortextmain"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/btnTiepTuc"
+            android:text="Tiếp theo"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:textColor="@color/colortextmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/graylineabove"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tlbDangTin"
+        android:background="@color/grayline"/>
+
+    <com.shuhart.stepview.StepView
+        android:layout_margin="10dp"
+        android:id="@+id/stpTienDo"
+        android:padding="10dp"
+        android:layout_below="@+id/tlbDangTin"
+        app:sv_doneCircleColor="@color/iconProgress"
+        app:sv_selectedCircleColor="@color/colortextmain"
+        app:sv_doneCircleRadius="14dp"
+        app:sv_selectedCircleRadius="18dp"
+        app:sv_doneStepLineColor="@color/colortextmain"
+        app:sv_nextStepLineColor="@color/iconProgress"
+        app:sv_doneStepMarkColor="@color/colortextmain"
+        app:sv_doneTextColor="@color/colortextmain"
+        app:sv_nextTextColor="@color/iconProgress"
+        app:sv_selectedTextColor="@color/colortextmain"
+        app:sv_selectedStepNumberColor="#FFF"
+        app:sv_stepNumberTextSize="14sp"
+        app:sv_stepLineWidth="5dp"
+        app:sv_textSize="14dp"
+        app:sv_textPadding="5dp"
+        app:sv_stepViewStyle="@style/StepView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <FrameLayout
+        android:id="@+id/frlayDangTin"
+        android:layout_below="@id/stpTienDo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:gravity="center|start"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Camera"
+        android:drawableStart="@drawable/ic_baseline_photo_camera_24"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colortextmain"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/lineTuyChon0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btnCamera"
+        android:background="@color/grayline" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMedia"
+        android:layout_below="@id/lineTuyChon0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:gravity="center|start"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Bộ sưu tập"
+        android:drawableStart="@drawable/ic_baseline_perm_media_24"
+        android:drawablePadding="10dp"
+        android:textColor="@color/colortextmain"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/lineTuyChon1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/btnMedia"
+        android:background="@color/grayline" />
+
+</RelativeLayout>

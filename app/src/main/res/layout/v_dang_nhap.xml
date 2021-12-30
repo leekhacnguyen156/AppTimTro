@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.vDangNhap">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbDangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleDangnhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colortextmain"
+                android:layout_centerInParent="true"
+                />
+            <ImageButton
+                android:id="@+id/btnBackDangNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear"
+                android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/graylineabove"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tlbDangnhap"
+        android:background="@color/grayline"/>
+
+
+    <ImageView
+        android:id="@+id/imgvIconApp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tlbDangnhap"
+        android:src="@mipmap/ic_app"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgvIconApp"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/edtTaikhoanDangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_style_edt"
+            android:fontFamily="serif"
+            android:hint="Tên tài khoản"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            />
+
+        <EditText
+            android:id="@+id/edtMatkhauDangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edtTaikhoanDangnhap"
+            android:hint="Mật Khẩu"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:background="@drawable/custom_style_edt"
+            android:fontFamily="serif"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+            />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxXemMK"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_alignBottom="@id/edtMatkhauDangnhap"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:button="@drawable/custom_check_box_see"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtMatkhauDangnhap"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_style_btn"
+            android:padding="10dp"
+            android:fontFamily="serif"
+            android:text="Đăng nhập"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtvQuenmatkhau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:textColor="@color/colortextmain"
+            android:layout_below="@+id/btnDangnhap"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvQuenmatkhau"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/txtvChuacotaikhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chưa có tài khoản?"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/txtvDangky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng ký"
+                android:fontFamily="serif"
+                android:textAllCaps="true"
+                android:textColor="@color/colortextmain"
+                android:textSize="14sp"
+                android:layout_toEndOf="@+id/txtvChuacotaikhoan"
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

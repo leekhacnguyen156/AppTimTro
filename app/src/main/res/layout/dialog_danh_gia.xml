@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbdialogDanhGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleDanhGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:textColor="@color/colortextmain" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingDanhGia"
+        android:layout_below="@id/tlbdialogDanhGia"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingDanhGia"
+        android:weightSum="2"
+        android:layout_margin="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHuyDanhGia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_style_btn_not"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOKDanhGia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/custom_style_btn"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

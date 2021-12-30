@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.vPhongDaDang">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbPhongDaDang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBackPhongDaDang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:layout_centerVertical="true"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/titlePhongDang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng đã đăng"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:textColor="@color/colortextmain"
+                android:layout_centerInParent="true"/>
+
+            <ImageButton
+                android:id="@+id/btnThemPhongDaDang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/ic_post_add"
+                android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/lvPhongDaDang"
+        android:padding="5dp"
+        android:layout_below="@+id/tlbPhongDaDang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

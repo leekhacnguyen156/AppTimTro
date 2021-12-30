@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+    tools:context=".Activity.vDatPhong">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tlbDatPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnBackDatPhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:id="@+id/titleDatPhong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="serif"
+                    android:text="Đặt phòng"
+                    android:textColor="@color/colortextmain"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewDatPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tlbDatPhong"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgAnhTinDatPhong"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/txtGiaDatPhongTin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/imgAnhTinDatPhong"
+                    android:layout_alignTop="@+id/imgAnhTinDatPhong"
+                    android:background="@color/colortextmain"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="3 triệu"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@id/imgAnhTinDatPhong">
+
+                    <TextView
+                        android:id="@+id/txtTieuDeDatPhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:gravity="top"
+                        android:singleLine="false"
+                        android:text="Tiêu đề"
+                        android:textColor="@color/colortextmain"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtDiaChiDatPhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTieuDeDatPhong"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/ic_vitri"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="serif"
+                        android:maxLines="2"
+                        android:singleLine="false"
+                        android:text=":Trà Vinh"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtDienTichTinDatPhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDiaChiDatPhong"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/ic_dientich"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="serif"
+                        android:text=":50m2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtDanhGiaTinDatPhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDienTichTinDatPhong"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/ic_ngoisao"
+                        android:drawablePadding="5dp"
+                        android:fontFamily="serif"
+                        android:text=": 0/5"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtThoiGianDangDatPhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDanhGiaTinDatPhong"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/ic_baseline_access_time_24"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="serif"
+                        android:text=": 1h"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardviewDatPhong"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtGiaPhongDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Giá: "
+                android:textAllCaps="false"
+                android:textColor="@color/textred"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtGiaPhongDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGiaPhongDat"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_style_edt"
+                android:fontFamily="serif"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColor="@color/textred"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtTenKhachDat"
+                android:layout_below="@id/edtGiaPhongDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Họ và tên: "
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtTenKhachDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTenKhachDat"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_style_edt"
+                android:fontFamily="serif"
+                android:hint="Nhập họ và tên"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtDiaChiDat"
+                android:layout_below="@id/edtTenKhachDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Địa chỉ: "
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtDiaChiDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDiaChiDat"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_style_edt"
+                android:fontFamily="serif"
+                android:hint="Nhập địa chỉ"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txtSoDienThoaiDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtDiaChiDat"
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Số điện thoại: "
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtSoDienThoaiDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSoDienThoaiDat"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_style_edt"
+                android:fontFamily="serif"
+                android:inputType="number"
+                android:hint="Nhập số điện thoại"
+                android:padding="10dp"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtGhiChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtSoDienThoaiDat"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Ghi chú: "
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtGhiChu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtGhiChu"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_style_edt"
+                android:fontFamily="serif"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_below="@id/edtGhiChu"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:id="@+id/btnHuyDatPhong"
+                    android:text="Hủy đặt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:fontFamily="serif"
+                    android:background="@drawable/custom_style_btn_none"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/btnXNDatPhong"
+                    android:text="Xác nhận đặt"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:background="@drawable/custom_style_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

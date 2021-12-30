@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbTaikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtThongtincanhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tài khoản"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colortextmain"
+                />
+
+            <ru.nikartm.support.ImageBadgeView
+                android:id="@+id/imgAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:scaleType="center"
+                app:ibv_badgePosition="top_left"
+                app:ibv_maxBadgeValue="99"
+                app:ibv_badgeValue="1"
+                app:ibv_badgeTextStyle="bold"
+                app:ibv_badgeTextSize="12sp"
+                app:ibv_badgeTextColor="@color/textred"
+                app:ibv_badgeColor="@android:color/transparent"
+                app:ibv_visibleBadge="false"
+                android:visibility="gone"
+                app:ibv_badgeLimitValue="false"
+                app:ibv_badgePadding="5dp"
+                app:ibv_roundBadge="true"
+                android:src="@drawable/ic_baseline_admin_panel_settings" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatarTaikhoan"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_appmain"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/tlbTaikhoan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/titleThongtincanhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgAvatarTaikhoan"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txtHovatenTaikhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Họ và tên"
+            android:textColor="@color/textred"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txtLoaitaikhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHovatenTaikhoan"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:textColor="#5C5B5B"
+            android:fontFamily="serif"
+            android:layout_marginTop="5dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grayline"
+        android:layout_below="@+id/titleThongtincanhan"
+        android:layout_margin="10dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp">
+
+        //Frame Noi o hien tai
+        <RelativeLayout
+            android:id="@+id/rlNoiNoiOHienTai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:layout_marginBottom="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center|start"
+                android:text="Thông tin cá nhân"
+                android:textColor="@color/colortextmain"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/ic_arrow_right"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_below="@+id/rlNoiNoiOHienTai"
+            android:id="@+id/txtPhongDaDang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Phòng đã đăng"
+            android:gravity="center|start"
+            android:textColor="@color/colortextmain"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:textSize="14sp"
+            android:layout_marginBottom="1dp"/>
+
+        //frame phòng đã đặt
+        <TextView
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_below="@+id/txtPhongDaDang"
+            android:id="@+id/txtPhongDaDat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Phòng đã đặt"
+            android:gravity="center|start"
+            android:textColor="@color/colortextmain"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:textSize="14sp"
+            android:layout_marginBottom="1dp"/>
+
+        <RelativeLayout
+            android:id="@+id/DuyetDatPhong"
+            android:layout_below="@+id/txtPhongDaDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="15dp"
+                android:background="@color/white"
+                android:id="@+id/txtDuyetDatPhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Duyệt đặt phòng"
+                android:gravity="center|start"
+                android:textColor="@color/colortextmain"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:textSize="14sp"
+                android:layout_marginBottom="1dp"/>
+
+            <TextView
+                android:id="@+id/txtCountDuyetDat"
+                android:textSize="14sp"
+                android:layout_marginEnd="45dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textColor="@color/textred"
+                android:layout_alignEnd="@id/txtDuyetDatPhong"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_below="@+id/DuyetDatPhong"
+            android:id="@+id/txtPhongDaLuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Đã lưu"
+            android:gravity="center|start"
+            android:textColor="@color/colortextmain"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:textSize="14sp"
+            android:layout_marginBottom="1dp"/>
+
+        //frame Đăng xuất
+        <TextView
+            android:id="@+id/txtDangXuat"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_below="@+id/txtPhongDaLuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Đăng xuất"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_arrow_right"
+            android:gravity="center|start"
+            android:textColor="@color/textred"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:isScrollContainer="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewDuyetDatPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:isScrollContainer="false"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rlCardviewDuyetDat"
+            android:isScrollContainer="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imgAnhMinhHoaTinDuyetDat"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/txtGiaPhongDuyetDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/imgAnhMinhHoaTinDuyetDat"
+                android:layout_alignTop="@+id/imgAnhMinhHoaTinDuyetDat"
+                android:background="@color/colortextmain"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="3 triệu"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlThongtinPhongDuyetDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/imgAnhMinhHoaTinDuyetDat">
+
+                <TextView
+                    android:id="@+id/txtTieuDePhongDuyetDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="top"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="@color/colortextmain"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtDiaChiPhongDuyetDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTieuDePhongDuyetDat"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_vitri"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="serif"
+                    android:maxLines="2"
+                    android:singleLine="false"
+                    android:text=" :"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDienTichPhongDuyetDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDiaChiPhongDuyetDat"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_dientich"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDanhGiaPhongDuyetDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDienTichPhongDuyetDat"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_ngoisao"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtThoiGianPhongDuyetDat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDanhGiaPhongDuyetDat"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_baseline_access_time_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="serif"
+                    android:text=":"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtThoiGianPhongDuyetDat"
+                    android:layout_marginTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgAvtTaikhoanDat"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_people" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/imgAvtTaikhoanDat">
+
+                        <TextView
+                            android:id="@+id/txtTenTaiKhoanDat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center|start"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/colortextmain"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtDiaChiTaiKhoanDat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtTenTaiKhoanDat"
+                            android:fontFamily="serif"
+                            android:gravity="center|start"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/textblack"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDuyetLaiViewDuyet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:gravity="center|start"
+            android:background="@android:color/transparent"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="Duyệt lại"
+            android:drawableStart="@drawable/ic_baseline_assignment_return_24"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colortextmain"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/lineTuyChon1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btnDuyetLaiViewDuyet"
+            android:background="@color/grayline" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

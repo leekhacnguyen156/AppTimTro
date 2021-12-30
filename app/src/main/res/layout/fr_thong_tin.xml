@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtLoaiTin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Loại tin"
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <com.example.timtro.xml.ExpandableHeightGridView
+                android:id="@+id/gridLoaiTin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtLoaiTin"
+                android:layout_marginTop="10dp"
+                android:isScrollContainer="false"
+                android:background="@drawable/custom_style_not_background"
+                android:numColumns="2"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp" />
+
+            <TextView
+                android:id="@+id/txtLoaiPhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gridLoaiTin"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Loại phòng"
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <com.example.timtro.xml.ExpandableHeightGridView
+                android:id="@+id/gridLoaiPhong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtLoaiPhong"
+                android:layout_marginTop="10dp"
+                android:isScrollContainer="false"
+                android:background="@drawable/custom_style_not_background"
+                android:numColumns="4"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"/>
+
+            <TextView
+                android:id="@+id/txtGiaPhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gridLoaiPhong"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Giá phòng (VND)"
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtDienTich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gridLoaiPhong"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Diện tích (m2)"
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linGiaS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtGiaPhong"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="6.5">
+
+                <EditText
+                    android:id="@+id/edtGiaPhong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_style_edt"
+                    android:hint="2.000.000"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/textblack" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5" />
+
+                <EditText
+                    android:id="@+id/edtDienTich"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_style_edt"
+                    android:hint="500"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="@color/textblack" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTienIchPhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/linGiaS"
+                android:fontFamily="serif"
+                android:text="Tiện ích phòng"
+                android:textAllCaps="false"
+                android:textColor="@color/textblack"
+                android:textSize="14sp" />
+
+            <com.example.timtro.xml.ExpandableHeightGridView
+                android:id="@+id/gridTienIchPhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="false"
+                android:layout_below="@id/txtTienIchPhong"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:numColumns="4" />
+
+        </RelativeLayout>
+
+</ScrollView>

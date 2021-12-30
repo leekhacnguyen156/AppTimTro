@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+    tools:context=".Activity.vChiTietTinDuyetDat">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tlbDuyetDatCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/btnBackDuyetDatCT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_arrow_back" />
+
+                    <TextView
+                        android:id="@+id/titleDuyetDatCT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="serif"
+                        android:text="Duyệt đặt phòng"
+                        android:textColor="@color/colortextmain"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardviewDuyetDatCT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tlbDuyetDatCT"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgDuyetDatCT"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/txtGiaDuyetDatCT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/imgDuyetDatCT"
+                        android:layout_alignTop="@+id/imgDuyetDatCT"
+                        android:background="@color/colortextmain"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="3 triệu"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@id/imgDuyetDatCT">
+
+                        <TextView
+                            android:id="@+id/txtTieuDeDuyetDatCT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="start|center"
+                            android:singleLine="false"
+                            android:text="Tiêu đề"
+                            android:textColor="@color/colortextmain"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtDiaChiDuyetDatCT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtTieuDeDuyetDatCT"
+                            android:layout_marginTop="10dp"
+                            android:drawableStart="@drawable/ic_vitri"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="serif"
+                            android:maxLines="2"
+                            android:singleLine="false"
+                            android:text=":Trà Vinh"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtDienTichDuyetDatCT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtDiaChiDuyetDatCT"
+                            android:layout_marginTop="10dp"
+                            android:drawableStart="@drawable/ic_dientich"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="serif"
+                            android:text=":50m2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtDanhGiaDuyetDatCT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtDienTichDuyetDatCT"
+                            android:layout_marginTop="10dp"
+                            android:drawableStart="@drawable/ic_ngoisao"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="serif"
+                            android:text=": 0/5"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/txtThoiGianDuyetDatCT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtDanhGiaDuyetDatCT"
+                            android:layout_marginTop="10dp"
+                            android:drawableStart="@drawable/ic_baseline_access_time_24"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="serif"
+                            android:text=": 1h"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/relTaoKhoanDatCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardviewDuyetDatCT"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgAvtTaikhoanDatCT"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_people" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/imgAvtTaikhoanDatCT">
+
+                        <TextView
+                            android:id="@+id/txtTenTaiKhoanDatCT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:gravity="center|start"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/colortextmain"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtDiaChiTaiKhoanDatCT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtTenTaiKhoanDatCT"
+                            android:fontFamily="serif"
+                            android:gravity="center|start"
+                            android:singleLine="false"
+                            android:text=""
+                            android:textColor="@color/textblack"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relTaoKhoanDatCT"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/txtGiaPhongDatCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Giá: "
+                    android:textAllCaps="false"
+                    android:textColor="@color/textred"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtGiaPhongDatCT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtGiaPhongDatCT"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_style_edt"
+                    android:fontFamily="serif"
+                    android:focusable="false"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="@color/textred"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtTenKhachDatCT"
+                    android:layout_below="@id/edtGiaPhongDatCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Họ và tên: "
+                    android:textAllCaps="false"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtTenKhachDatCT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTenKhachDatCT"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_style_edt"
+                    android:fontFamily="serif"
+                    android:focusable="false"
+                    android:hint="Nhập họ và tên"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDiaChiDatCT"
+                    android:layout_below="@id/edtTenKhachDatCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Địa chỉ: "
+                    android:textAllCaps="false"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtDiaChiDatCT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDiaChiDatCT"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_style_edt"
+                    android:fontFamily="serif"
+                    android:focusable="false"
+                    android:hint="Nhập địa chỉ"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/txtSoDienThoaiDatCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtDiaChiDatCT"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Số điện thoại: "
+                    android:textAllCaps="false"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtSoDienThoaiDatCT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSoDienThoaiDatCT"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_style_edt"
+                    android:fontFamily="serif"
+                    android:inputType="number"
+                    android:focusable="false"
+                    android:hint="Nhập số điện thoại"
+                    android:padding="10dp"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtGhiChuCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtSoDienThoaiDatCT"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Ghi chú: "
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtGhiChuCT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtGhiChuCT"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_style_edt"
+                    android:fontFamily="serif"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:focusable="false"
+                    android:textColor="@color/textblack"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTuyChonCTDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/colortextmain"
+        app:rippleColor="@color/colortextmain"
+        android:layout_margin="30dp"
+        app:srcCompat="@drawable/ic_baseline_menu_open_24" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

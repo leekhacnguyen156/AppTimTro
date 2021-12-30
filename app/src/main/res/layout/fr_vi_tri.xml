@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtChonTinh"
+            android:textColor="@color/textblack"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:text="Chọn Tỉnh/TP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtChonTinhTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtChonTinh"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/custom_style_edt"
+            android:focusable="false"
+            android:fontFamily="serif"
+            android:hint="Tỉnh/TP"
+            android:inputType="textNoSuggestions"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/textblack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtChonHuyen"
+            android:layout_below="@id/edtChonTinhTin"
+            android:textColor="@color/textblack"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:text="Chọn Quận/Huyện"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtChonHuyenTin"
+            android:focusable="false"
+            android:layout_below="@id/txtChonHuyen"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textblack"
+            android:background="@drawable/custom_style_edt"
+            android:padding="10dp"
+            android:hint="Quận/Huyện"
+            android:inputType="textNoSuggestions"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtDiaChi"
+            android:layout_below="@id/edtChonHuyenTin"
+            android:textColor="@color/textblack"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:text="Địa chỉ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtDiaChiTin"
+            android:layout_below="@id/txtDiaChi"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textblack"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:background="@drawable/custom_style_edt"
+            android:padding="10dp"
+            android:hint="Nhập số nhà, tên đường"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

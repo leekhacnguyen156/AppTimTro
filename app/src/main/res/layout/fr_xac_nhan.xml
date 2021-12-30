@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relTieuDeBaiDang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTieuDeTin"
+                android:textColor="@color/textblack"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="Tiêu đề bài đăng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtSoKiTuTieuDe"
+                android:textColor="@color/textred"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtTieuDeBaiDang"
+            android:layout_below="@+id/relTieuDeBaiDang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_style_edt"
+            android:fontFamily="serif"
+            android:hint="Nhập tiêu đề bài đăng"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relTenChuTin"
+            android:layout_below="@id/edtTieuDeBaiDang"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtTenChuTin"
+                android:textColor="@color/textblack"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="Liên hệ với chủ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtTenChuTin"
+            android:layout_below="@+id/relTenChuTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_style_edt"
+            android:fontFamily="serif"
+            android:hint="Tên của bạn"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtSoDienThoai"
+            android:layout_below="@id/edtTenChuTin"
+            android:textColor="@color/textblack"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="Số điện thoại (liên lạc)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtSoDienThoai"
+            android:layout_below="@+id/txtSoDienThoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_style_edt"
+            android:fontFamily="serif"
+            android:hint="Nhập số điện thoại của bạn"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relMoTa"
+            android:layout_below="@id/edtSoDienThoai"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtMoTa"
+                android:textColor="@color/textblack"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="Mô tả chi tiết"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtSoKiTuMoTa"
+                android:textColor="@color/textred"
+                android:textAllCaps="false"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="0"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtMoTa"
+            android:layout_below="@+id/relMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_style_edt"
+            android:fontFamily="serif"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="10dp"
+            android:minLines="3"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

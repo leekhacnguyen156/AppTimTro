@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.vChiTietTin"
+    android:isScrollContainer="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tlbChiTietTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtGiaPhongChiTietTin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá phòng/tháng"
+                    android:textSize="18sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colortextmain"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageButton
+                    android:id="@+id/btnBackChiTietTin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/textblack"
+            android:layout_below="@+id/tlbChiTietTin"
+            android:id="@+id/viewPagerimgChiTietTin"
+            />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorCTTin"
+            android:layout_alignBottom="@id/viewPagerimgChiTietTin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTieudeChiTietTin"
+            android:fontFamily="serif"
+            android:text="Tiêu đề dài thòn luôn nè"
+            android:textSize="18sp"
+            android:textColor="@color/colortextmain"
+            android:textStyle="bold"
+            android:layout_below="@+id/viewPagerimgChiTietTin"
+            android:layout_margin="10dp"
+            android:singleLine="false"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rltChiTietTin"
+            android:layout_below="@+id/txtTieudeChiTietTin"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDiaChiChiTietTin"
+                android:text=": Địa chỉ"
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_vitri"
+                android:drawablePadding="10dp"
+                android:gravity="bottom"
+                android:singleLine="false"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLienHeChiTietTin"
+                android:layout_below="@+id/txtDiaChiChiTietTin"
+                android:text=": 0969775114 - Nguyên"
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:gravity="bottom"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtDienTichPhongChiTiettin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLienHeChiTietTin"
+                android:drawableStart="@drawable/ic_dientich"
+                android:drawablePadding="10dp"
+                android:text=": 50m2"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtDanhGiaChiTietTin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDienTichPhongChiTiettin"
+                android:drawableStart="@drawable/ic_ngoisao"
+                android:drawablePadding="10dp"
+                android:text=": 0/5"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtNguoiDatPhongChiTietTin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDanhGiaChiTietTin"
+                android:drawableStart="@drawable/ic_nguoidatphong"
+                android:drawablePadding="10dp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/titleTienIchChiTietTin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rltChiTietTin"
+            android:text="Tiện ích phòng: "
+            android:textColor="@color/colortextmain"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            />
+        <com.example.timtro.xml.ExpandableHeightGridView
+            android:id="@+id/gridTienIchPhongChiTietTin"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:isScrollContainer="false"
+            android:layout_below="@id/titleTienIchChiTietTin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:numColumns="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleMotaChiTietTin"
+            android:layout_below="@+id/gridTienIchPhongChiTietTin"
+            android:text="Mô tả: "
+            android:textColor="@color/colortextmain"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:minLines="3"
+            android:layout_below="@+id/titleMotaChiTietTin"
+            android:id="@+id/txtMoTaChiTietTin"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:fontFamily="serif"
+            android:text="Đây là mô tả"
+            />
+
+    </RelativeLayout>
+</ScrollView>

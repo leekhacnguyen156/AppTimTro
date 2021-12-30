@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.vDangKy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tlbDangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/titleDangky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng ký"
+                    android:textSize="18sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/colortextmain"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageButton
+                    android:id="@+id/btnBackDangKy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View
+            android:id="@+id/graylineabove"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tlbDangky"
+            android:background="@color/grayline" />
+
+        <ImageView
+            android:id="@+id/imgvIconApp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tlbDangky"
+            android:src="@mipmap/ic_app"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgvIconApp"
+            android:layout_margin="10dp"
+            android:id="@+id/layoutThongtintaikhoandangky">
+
+            <TextView
+                android:id="@+id/titleTaikhoandangky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:text="Thông tin tài khoản:"
+                android:textColor="@color/colortextmain" />
+
+            <EditText
+                android:layout_below="@+id/titleTaikhoandangky"
+                android:id="@+id/edtTentaikhoandangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="Tên tài khoản"
+                android:background="@drawable/custom_style_edt"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                />
+
+            <EditText
+                android:id="@+id/edtMatkhaudangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtTentaikhoandangky"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_style_edt"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                android:fontFamily="serif"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxXemDangKy"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:layout_alignBottom="@id/edtMatkhaudangky"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:button="@drawable/custom_check_box_see"/>
+
+            <EditText
+                android:id="@+id/edtMatkhaudangkynhaplai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/edtMatkhaudangky"
+                android:hint="Nhập lại mật khẩu"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:background="@drawable/custom_style_edt"
+                android:fontFamily="serif" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxNhapMKLai"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:scaleType="center"
+                android:clickable="false"
+                android:layout_alignBottom="@id/edtMatkhaudangkynhaplai"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:button="@drawable/ciustom_check_box_mk"/>
+
+            <EditText
+                android:id="@+id/edtMatkhaucap2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtMatkhaudangkynhaplai"
+                android:layout_marginTop="10dp"
+                android:hint="Mật khẩu cấp 2"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:background="@drawable/custom_style_edt"
+                android:fontFamily="serif"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+                />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkboxCap2DangKy"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:layout_alignBottom="@id/edtMatkhaucap2"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:button="@drawable/custom_check_box_see"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutThongtintaikhoandangky"
+            android:layout_margin="10dp"
+            android:id="@+id/layoutThongtincanhandangky">
+
+            <TextView
+                android:id="@+id/titleThongtinTaikhoandangky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:text="Thông tin cá nhân:"
+                android:textColor="@color/colortextmain" />
+
+            <LinearLayout
+                android:id="@+id/layoutHovatendangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleThongtinTaikhoandangky"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/edtHodemdangky"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleThongtinTaikhoandangky"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/custom_style_edt"
+                    android:fontFamily="serif"
+                    android:hint="Họ đệm"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:layout_below="@+id/titleThongtinTaikhoandangky"
+                    android:id="@+id/edtTendangky"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginStart="3dp"
+                    android:hint="Tên"
+                    android:background="@drawable/custom_style_edt"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtSDTdangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutHovatendangky"
+                android:padding="15dp"
+                android:hint="Số điện thoại"
+                android:background="@drawable/custom_style_edt"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:id="@+id/titlediachidangky"
+                android:layout_below="@+id/edtSDTdangky">
+
+                <EditText
+                    android:id="@+id/edtTinhdangky"
+                    android:layout_width="0dp"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleThongtinTaikhoandangky"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_style_edt"
+                    android:fontFamily="serif"
+                    android:hint="Tỉnh"
+                    android:inputType="textNoSuggestions"
+                    android:padding="15dp"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    />
+
+                <EditText
+                    android:layout_below="@+id/titleThongtinTaikhoandangky"
+                    android:id="@+id/edtHuyendangky"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginStart="3dp"
+                    android:hint="Huyện"
+                    android:background="@drawable/custom_style_edt"
+                    android:inputType="textNoSuggestions"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edtDiachidangky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titlediachidangky"
+                android:padding="15dp"
+                android:hint="Địa chỉ cụ thể"
+                android:background="@drawable/custom_style_edt"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif" />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutThongtincanhandangky"
+            android:text="Đăng ký"
+            android:background="@drawable/custom_style_btn"
+            android:layout_margin="10dp"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:fontFamily="serif"
+            android:textColor="#FFF"/>
+
+    </RelativeLayout>
+
+</ScrollView>

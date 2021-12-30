@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+    android:id="@+id/tabTrangchu"
+    android:icon="@mipmap/home"
+    android:title="Trang chủ"
+    app:cnb_backgroundColor="@color/colortextmain"
+    app:cnb_iconColor="#FFF"
+    app:cnb_textColor="#DCFFFFFF"/>
+
+    <item
+        android:id="@+id/tabTimkiem"
+        android:title="Tìm kiếm"
+        android:icon="@mipmap/search"
+        app:cnb_backgroundColor="@color/colortextmain"
+        app:cnb_iconColor="#FFF"
+        app:cnb_textColor="#DCFFFFFF"/>
+    <item
+        android:id="@+id/tabThongbao"
+        android:title="Thông báo"
+        android:icon="@mipmap/bell"
+        app:cnb_backgroundColor="@color/colortextmain"
+        app:cnb_iconColor="#FFF"
+        app:cnb_textColor="#DCFFFFFF"/>
+
+    <item
+        android:id="@+id/tabTaikhoan"
+        android:title="Tài khoản"
+        android:icon="@mipmap/account"
+        app:cnb_backgroundColor="@color/colortextmain"
+        app:cnb_iconColor="#FFF"
+        app:cnb_textColor="#DCFFFFFF"/>
+</menu>

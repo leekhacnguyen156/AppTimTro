@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbDangTin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnThoatDuyetTin"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/titleDuyetTin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duyệt bài đăng"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:textColor="@color/colortextmain"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/graylineabove"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tlbDangTin"
+        android:background="@color/grayline"/>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chipnavTabDuyet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tlbDangTin"
+        android:background="@android:color/transparent"
+        android:elevation="16dp"
+        app:cnb_badgeColor="@color/white"
+        android:theme="@style/MyTabLayoutTextAppearance"
+        app:cnb_menuResource="@menu/menu_tab_duyet"/>
+
+    <FrameLayout
+        android:id="@+id/frlayoutDangTin"
+        android:layout_below="@id/chipnavTabDuyet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

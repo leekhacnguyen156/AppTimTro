@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:isScrollContainer="false"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTenLichSu"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử tìm kiếm"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/textblack"/>
+    <TextView
+        android:id="@+id/txtXoaLichSuTimKiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Xóa lịch sử"
+        android:fontFamily="serif"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colortextmain"
+        android:layout_marginEnd="10dp"
+        />
+
+    <ListView
+        android:id="@+id/lvLichSuTimKiem"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtTenLichSu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
